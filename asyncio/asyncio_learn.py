@@ -31,9 +31,9 @@ async def fetch_data(url):
                     max_price = price_spans[1].text.split()
                     print(min_price, max_price)
                 else:
-                    print("Незнайдено")
+                    print("not found")
             else:
-                print(f"Помилка {response.status}")
+                print(f"Error {response.status}")
                 return None
 
 if __name__ == ("__main__"):
